@@ -234,7 +234,7 @@ set ai!                      " 设置自动缩进
 set smartindent              " 智能自动缩进
 "set relativenumber           " 开启相对行号
 set nu!                      " 显示行号
-set mouse=a                  " 启用鼠标
+"set mouse=a                  " 启用鼠标
 set ruler                    " 右下角显示光标位置的状态行
 set incsearch                " 开启实时搜索功能
 set hlsearch                 " 开启高亮显示结果
@@ -546,9 +546,9 @@ if g:isWIN
     let blog.path_html     = 'D:/Ruchee/mysite/html/'
     let blog.template_path = 'D:/Ruchee/mysite/templates/'
 else
-    let blog.path          = '~/www/vimwiki/wiki/'
-    let blog.path_html     = '~/www/vimwiki/html/'
-    let blog.template_path = '~/www/vimwiki/templates/'
+    let blog.path          = '~/projects/document/wiki/'
+    let blog.path_html     = '~/projects/document/html/'
+    let blog.template_path = '~/projects/document/templates/'
 endif
 let blog.template_default  = 'site'
 let blog.template_ext      = '.html'
