@@ -53,6 +53,8 @@ endif
 " \ff                        --打开ctrlp.vim文件搜索窗口
 " \ig                        --显示/关闭对齐线
 " \bb                        --按=号对齐代码
+" jj                         --保存文件并留在插入模式 [插入模式]
+" kk                         ----返回Normal模式 [插入模式]
 " \bn                        --自定义对齐
 " \th                        --一键生成与当前编辑文件同名的HTML文件 [不输出行号]
 " \ev                        --编辑当前所使用的Vim配置文件
@@ -423,6 +425,12 @@ nmap <leader>a <ESC>ggVG"+y<ESC>
 imap <leader>v <ESC>"+p
 nmap <leader>v "+p
 vmap <leader>v "+p
+
+" jj                  保存文件并留在插入模式 [插入模式]
+imap jj <ESC>:w<CR>li
+
+" kk                  返回Normal模式 [插入模式]
+imap kk <ESC>l
 
 " \bb                 按=号对齐代码 [Tabular插件]
 nmap <leader>bb :Tab /=<CR>
