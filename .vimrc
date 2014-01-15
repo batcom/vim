@@ -48,6 +48,7 @@ endif
 "
 " \ww                        --打开Vimwiki主页
 " \wa                        --一键编译所有Vimwiki源文件
+" \cw                        --编译当前Vimwiki源文件
 " \nt                        --打开NERDTree文件树窗口
 " \tl                        --打开/关闭TagList/TxtBrowser窗口
 " \ff                        --打开ctrlp.vim文件搜索窗口
@@ -488,6 +489,10 @@ imap <leader>wa <ESC>\ww<ESC>:VimwikiAll2HTML<CR>:qa<CR>
 nmap <leader>wa <ESC>\ww<ESC>:VimwikiAll2HTML<CR>:qa<CR>
 vmap <leader>wa <ESC>\ww<ESC>:VimwikiAll2HTML<CR>:qa<CR>
 
+" \cw                编译当前Vimwiki源文件
+imap <leader>cw <ESC>:Vimwiki2HTML<CR>
+nmap <leader>cw <ESC>:Vimwiki2HTML<CR>
+vmap <leader>cw <ESC>:Vimwiki2HTML<CR>
 
 " \ev                 编辑当前所使用的Vim配置文件
 nmap <leader>ev <ESC>:e $MYVIMRC<CR>
