@@ -1,8 +1,8 @@
-" -----------------   Author: batcom
-" -----------------    Email: xhn55920@gmail.com
+" -----------------  Author: batcom
+" -----------------  Email: xhn55920@gmail.com
 " -----------------  WebSite: http://www.mdaxue.com
-" -----------------     Date: 2013-11-28 11:41
-" -----------------     For Windows, Cygwin and Linux
+" -----------------  Date: 2013-11-28 11:41
+" -----------------  For Windows, Cygwin and Linux
 " -----------------  https://github.com/batcom/vim
 
 
@@ -343,7 +343,7 @@ else
 endif
 
 " snipMate            Tab智能补全
-let g:snips_author = 'Ruchee'
+let g:snips_author = 'Coolnet'
 if g:isWIN
     let g:snippets_dir = $VIM.'/snippets/'
 else
@@ -370,9 +370,9 @@ let g:snipMate.scope_aliases['html']       = 'html,angular'
 let NERDSpaceDelims = 1                        " 自动添加前置空格
 
 " AuthorInfoDetect    自动添加作者、时间等信息，本质是NERD_commenter && authorinfo的结合
-let g:vimrc_author   = 'Ruchee'                " 昵称
-let g:vimrc_email    = 'my@ruchee.com'         " 邮箱
-let g:vimrc_homepage = 'http://www.ruchee.com' " 个人主页
+let g:vimrc_author   = 'CoolNet'                " 昵称
+let g:vimrc_email    = 'xhn55920@ruchee.com'         " 邮箱
+let g:vimrc_homepage = 'http://www.mdaxue.com' " 个人主页
 
 " Indent_guides       显示对齐线
 let g:indent_guides_enable_on_vim_startup = 0  " 默认关闭
@@ -546,7 +546,7 @@ vmap <leader>T <ESC>:LoadTemplate<CR><ESC>:AuthorInfoDetect<CR><ESC>Gi
 
 
 " ======= Vimwiki ======= "
-
+autocmd BufNewFile *.md 0 r ~/.vim/template/md/main.md  "新建md wiki的时候自动加入静态部署需要的信息
 let g:vimwiki_w32_dir_enc     = 'utf-8' " 设置编码
 let g:vimwiki_use_mouse       = 1       " 使用鼠标映射
 let g:vimwiki_valid_html_tags = 'a,img,b,i,s,u,sub,sup,br,hr,div,del,code,red,center,left,right,h1,h2,h3,h4,h5,h6,pre,script,style'
