@@ -365,6 +365,8 @@ let g:snipMate.scope_aliases['less']       = 'less,css'
 let g:snipMate.scope_aliases['xhtml']      = 'html'
 let g:snipMate.scope_aliases['html']       = 'html,angular'
 
+" zencoding 自动功能
+let g:user_emmet_expandabbr_key = '<Tab>'
 
 " NERD_commenter      注释处理插件
 let NERDSpaceDelims = 1                        " 自动添加前置空格
@@ -567,4 +569,21 @@ let blog.template_default  = 'site'
 let blog.template_ext      = '.html'
 let blog.auto_export       = 1
 
-let g:vimwiki_list = [blog]
+let wiki = {}
+"let blog.syntax = 'markdown'
+"let blog.ext = '.md'
+if g:isWIN
+    let wiki.path          = 'D:/Ruchee/mysite/wiki/'
+    let wiki.path_html     = 'D:/Ruchee/mysite/html/'
+    let wiki.template_path = 'D:/Ruchee/mysite/templates/'
+else
+    let wiki.path          = '~/wiki/wiki/'
+    let wiki.path_html     = '~/wiki/html/'
+    let wiki.template_path = '~/wiki/templates/'
+endif
+let wiki.template_default  = 'site'
+let wiki.template_ext      = '.html'
+let wiki.auto_export       = 1
+
+
+let g:vimwiki_list = [blog,wiki]
